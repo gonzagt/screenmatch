@@ -5,18 +5,18 @@ public class Principal {
         Pelicula miPeli = new Pelicula();
         Pelicula otraPeli = new Pelicula();
 
-        miPeli.nombre = "300";
-        miPeli.fechaDeLanzamiento = 2010;
-        miPeli.duracionEnMinutos = 120;
-        miPeli.incluidoEnElPlan = true;
+        miPeli.setNombre("300");
+        miPeli.setFechaDeLanzamiento(2010);
+        miPeli.setDuracionEnMinutos(120);
+        miPeli.setIncluidoEnElPlan(true);
         miPeli.evalua(8.9);
         miPeli.evalua(9);
         miPeli.evalua(8.7);
 
-        otraPeli.nombre = "El Señor de los Anillos";
-        otraPeli.fechaDeLanzamiento = 2003;
-        otraPeli.duracionEnMinutos = 180;
-        otraPeli.incluidoEnElPlan = true;
+        otraPeli.setNombre("El Señor de los Anillos");
+        otraPeli.setFechaDeLanzamiento(2003);
+        otraPeli.setDuracionEnMinutos(180);
+        otraPeli.setIncluidoEnElPlan(true);
         otraPeli.evalua(8.1);
         otraPeli.evalua(9);
         otraPeli.evalua(6.7);

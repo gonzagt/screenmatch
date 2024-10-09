@@ -1,12 +1,28 @@
 package com.screenmatch;
 
 public class Pelicula {
-    String nombre;
-    int fechaDeLanzamiento;
-    int duracionEnMinutos;
-    boolean incluidoEnElPlan;
+    private String nombre;
+    private int fechaDeLanzamiento;
+    private int duracionEnMinutos;
+    private boolean incluidoEnElPlan;
     private int cantidadEvaluaciones;
     private double sumaDeEvaluaciones;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
+    public void setDuracionEnMinutos(int duracionEnMinutos) {
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
+
+    public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
+        this.incluidoEnElPlan = incluidoEnElPlan;
+    }
 
     int getCantidadEvaluaciones(){
         return cantidadEvaluaciones;
