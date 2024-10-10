@@ -42,6 +42,5 @@ public class Principal {
         System.out.println(resultado2);
 
         houseDragon.fichaTecnica();
-
     }
 }
