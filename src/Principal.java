@@ -1,9 +1,11 @@
 import com.screenmatch.Pelicula;
+import com.screenmatch.Serie;
 
 public class Principal {
     public static void main(String[] args) {
         Pelicula miPeli = new Pelicula();
         Pelicula otraPeli = new Pelicula();
+        Serie houseDragon = new Serie();
 
         miPeli.setNombre("300");
         miPeli.setFechaDeLanzamiento(2010);
@@ -25,13 +27,21 @@ public class Principal {
         int otraPeli_eval = otraPeli.getCantidadEvaluaciones();
         double otraPeli_media = otraPeli.calculaMedia();
 
+        houseDragon.setNombre("House of the Dragon");
+        houseDragon.setTemporadas(2);
+        houseDragon.setEpisodiosPorTemporada(10);
+        houseDragon.setMinutosPorEpisodio(50);
+        houseDragon.setFechaDeLanzamiento(2021);
+
         miPeli.fichaTecnica();
         String resultado1 = String.format("La puntuación media, basada en %d evaluaciones, es de %.2f", miPeli_eval,miPeli_media);
         System.out.println(resultado1);
 
         otraPeli.fichaTecnica();
         String resultado2 = String.format("La puntuación media, basada en %d evaluaciones, es de %.2f", otraPeli_eval,otraPeli_media);
-
         System.out.println(resultado2);
+
+        houseDragon.fichaTecnica();
+
     }
 }
