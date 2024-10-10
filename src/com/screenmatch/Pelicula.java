@@ -24,7 +24,7 @@ public class Pelicula {
         this.incluidoEnElPlan = incluidoEnElPlan;
     }
 
-    int getCantidadEvaluaciones(){
+    public int getCantidadEvaluaciones(){
         return cantidadEvaluaciones;
     }
 

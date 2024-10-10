@@ -12,6 +12,8 @@ public class Principal {
         miPeli.evalua(8.9);
         miPeli.evalua(9);
         miPeli.evalua(8.7);
+        int miPeli_eval = miPeli.getCantidadEvaluaciones();
+        double miPeli_media = miPeli.calculaMedia();
 
         otraPeli.setNombre("El Señor de los Anillos");
         otraPeli.setFechaDeLanzamiento(2003);
@@ -20,13 +22,16 @@ public class Principal {
         otraPeli.evalua(8.1);
         otraPeli.evalua(9);
         otraPeli.evalua(6.7);
+        int otraPeli_eval = otraPeli.getCantidadEvaluaciones();
+        double otraPeli_media = otraPeli.calculaMedia();
 
         miPeli.fichaTecnica();
-        System.out.println("La puntuación media de esta película es: "+miPeli.calculaMedia());
+        String resultado1 = String.format("La puntuación media, basada en %d evaluaciones, es de %.2f", miPeli_eval,miPeli_media);
+        System.out.println(resultado1);
 
         otraPeli.fichaTecnica();
-        System.out.println("La puntuación media de esta película es: "+otraPeli.calculaMedia());
+        String resultado2 = String.format("La puntuación media, basada en %d evaluaciones, es de %.2f", otraPeli_eval,otraPeli_media);
 
-
+        System.out.println(resultado2);
     }
 }
