@@ -1,5 +1,6 @@
-import com.screenmatch.Pelicula;
-import com.screenmatch.Serie;
+import com.screenmatch.calcs.CalculadoraDeTiempo;
+import com.screenmatch.models.Pelicula;
+import com.screenmatch.models.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -42,5 +43,13 @@ public class Principal {
         System.out.println(resultado2);
 
         houseDragon.fichaTecnica();
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+
+        calculadora.incluye(miPeli);
+        calculadora.incluye(otraPeli);
+//        calculadora.incluye(houseDragon);
+
+        System.out.println(calculadora.getTiempoTotal());
     }
 }

@@ -1,4 +1,4 @@
-package com.screenmatch;
+package com.screenmatch.models;
 
 public class Serie extends Titulo{
     private int temporadas;

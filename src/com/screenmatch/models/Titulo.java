@@ -1,4 +1,4 @@
-package com.screenmatch;
+package com.screenmatch.models;
 
 public class Titulo {
     private String nombre;
