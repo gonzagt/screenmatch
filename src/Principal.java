@@ -1,4 +1,6 @@
 import com.screenmatch.calcs.CalculadoraDeTiempo;
+import com.screenmatch.calcs.FiltroRecomendacion;
+import com.screenmatch.models.Episodio;
 import com.screenmatch.models.Pelicula;
 import com.screenmatch.models.Serie;
 
@@ -48,8 +50,18 @@ public class Principal {
 
         calculadora.incluye(miPeli);
         calculadora.incluye(otraPeli);
-//        calculadora.incluye(houseDragon);
+//      calculadora.incluye(houseDragon);
 
-        System.out.println(calculadora.getTiempoTotal());
+//        System.out.println(calculadora.getTiempoTotal());
+
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPeli);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targaryen");
+        episodio.setSerie(houseDragon);
+        episodio.setTotalVisualizaciones(2);
+        filtroRecomendacion.filtra(episodio);
     }
 }

@@ -1,6 +1,8 @@
 package com.screenmatch.models;
 
-public class Pelicula extends Titulo{
+import com.screenmatch.calcs.Clasificable;
+
+public class Pelicula extends Titulo implements Clasificable {
     private String director;
 
     public String getDirector() {
@@ -9,5 +11,10 @@ public class Pelicula extends Titulo{
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClasificable() {
+        return (int) (calculaMedia() / 2);
     }
 }
