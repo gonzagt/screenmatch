@@ -43,7 +43,7 @@ public class Episodio implements Clasificable {
 
     @Override
     public int getClasificable() {
-        if (totalVisualizaciones > 100) {
+        if (totalVisualizaciones >= 100) {
             return 4;
         } else {
             return 3;

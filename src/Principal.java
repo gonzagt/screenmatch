@@ -61,7 +61,7 @@ public class Principal {
         episodio.setNumero(1);
         episodio.setNombre("La casa Targaryen");
         episodio.setSerie(houseDragon);
-        episodio.setTotalVisualizaciones(2);
+        episodio.setTotalVisualizaciones(100);
         filtroRecomendacion.filtra(episodio);
     }
 }
